@@ -24,13 +24,24 @@ h1, .article, footer {
 @media screen and (min-width: 961px){
     .article {
         flex: 1 0 calc(33% - 20px); 
-        max-width: calc(100% / 3);
+        max-width: calc((100% / 3) - 10px);
+    }
+    h1, footer {
+        max-width: calc(100% - 30px);
+    }
+    body {
+        margin-left: 10px;
+        margin-right: 0px;
     }
 }
 
 @media screen and (max-width: 960px){
     .article {
         flex: 1 0 calc(50% - 10px); 
-        max-width: 50%;
+        max-width: calc(50% - 5px);
+    }
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
